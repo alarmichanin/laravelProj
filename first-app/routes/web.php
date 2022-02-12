@@ -20,6 +20,6 @@ Route::get('/', function () {
 });
 Route::get('/about',[ViewsController::class,'getAbout']);
 Route::get('/contact',[ViewsController::class,'getContact']);
-Route::get('/products',[ViewsController::class,'getProducts']);
+Route::get('/products',[ProductsController::class,'getProducts']);
 Route::get('/products/{id}',[ProductsController::class,'getProduct'])->whereNumber('id');
 Route::post('/products/{id}',[ProductsController::class,'addProduct'])->whereNumber('id');

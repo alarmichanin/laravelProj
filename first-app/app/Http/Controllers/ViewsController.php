@@ -12,8 +12,5 @@ class ViewsController extends Controller{
     public function getContact(){
         return view('contact');
     }
-    public function getProducts(){
-        return view('products',['name' => $this->name,'products'=>['0'=>'iPhone X','1'=>'iPhone XR','2'=>'iPhone XS','3'=>"iPhone SE"]]);
-    }
 }
 
