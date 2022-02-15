@@ -4,17 +4,34 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 
+
+
+
+
+
+
+use Illuminate\Support\Facades\DB;
+
+
+
+
+
 class ProductsController extends Controller{
     protected $name = "USER";
 
     public function getAllProducts(){
-        $products = Product::find(1);
-        // dd($products);
+        // try {
+        //     DB::select('select * from places where visited = ?', [1]);	
+        // } catch (\Exception $e) {
+        //     die("Could not connect to the database.  Please check your configuration. error:" . $e );
+        // }
+        $products = Product::all();
+        return $products;
     }
 
     public function getProducts(){
-        echo $this->getAllProducts();
-        return view('products',['name' => $this->name,'products'=>['0'=>'iPhone X','1'=>'iPhone XR','2'=>'iPhone XS','3'=>"iPhone SE"]]);
+        $products = $this->getAllProducts();
+        return view('products',['name' => $this->name,'products'=>$products]);
     }
 
     public function getProduct($id){
