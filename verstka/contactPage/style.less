@@ -1,0 +1,100 @@
+@mainColor: #662E1C;
+@secondColor: #AF4425;
+@thirdColor: #EBDCB2;
+@forthColor: #FF922D;
+
+body{
+  background-image: linear-gradient(rgba(102, 46, 28, 0.6), rgba(102, 46, 28, 0.6)), url('../assets/backgr.png');
+  background-position: center;
+  background-size: contain;
+}
+.contactUs {
+  margin-top: 80px;
+  position: relative;
+
+  .child{
+    position: absolute;
+  }
+  .paw{
+    font-size: 140px;
+    top: 65px;
+    color: @thirdColor;
+
+  }
+  .left{
+    left: 55px;
+    transform: rotate(-28deg);
+  }
+  .right{
+    transform: rotate(128deg);
+  }
+  .contact {
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 64px;
+    color: @forthColor;
+    text-align: center;
+  }
+
+  .mapForm {
+    margin-top: 45px;
+    font-size: 24px;
+    color: @thirdColor;
+    -webkit-text-stroke: 0.5px @mainColor;
+
+    .ourOffice {
+      text-align: center;
+    }
+
+    .map {
+      iframe {
+        margin-top: 20px;
+        border-radius: 26px;
+        height: 355px;
+        width: 100%;
+        border: 0;
+      }
+    }
+
+    .contactUsForm {
+      label {
+        display: block;
+        text-align: center;
+        margin-bottom: 18px;
+      }
+
+      label:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      input, textarea {
+        justify-content: center;
+        width: 100%;
+        background-color: @thirdColor;
+        border: 0;
+      }
+
+      input:not(:last-child) {
+        height: 35px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    button {
+      width: 100%;
+      margin: 30px 0 200px 0;
+      font-size: 36px;
+      font-weight: bold;
+      color: @mainColor;
+      background-color: @forthColor;
+      border-radius: 15px;
+      border: 0;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+}
+

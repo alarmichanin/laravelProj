@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v23/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v23/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XXME.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #662E1C;
+  opacity: 85%;
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+}
+.navbar .nav {
+  height: 80px;
+}
+.navbar .nav .logo {
+  width: 50%;
+  margin-top: 10px;
+}
+.navbar .nav .menu {
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.navbar .nav .menu .aDiv {
+  height: 30px;
+}
+.navbar .nav .menu .aDiv a {
+  font-size: 14px;
+  color: #EBDCB2;
+  text-decoration: none;
+  position: relative;
+}
+.navbar .nav .menu .aDiv .underline:after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  bottom: -7px;
+  border-radius: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5px;
+  background: #FF922D;
+}
+.navbar .nav .iconsHeader {
+  margin-top: 13px;
+}
+.navbar .nav .iconsHeader .mobile {
+  font-size: 25px;
+  color: #EBDCB2;
+}
+.navbar .nav .iconsHeader .cart {
+  justify-content: start;
+  font-size: 25px;
+  color: #EBDCB2;
+}
+.footer {
+  height: 618px;
+  background: #662E1C;
+  color: #EBDCB2;
+}
+.footer .headerOfFooter {
+  margin-top: 105px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.footer .schedule {
+  margin-top: 30px;
+  font-size: 24px;
+}
+.footer .detail {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 2;
+}
+.footer .footerPaw {
+  margin-top: 130px;
+  position: relative;
+  height: 400px;
+}
+.footer .footerPaw .child {
+  position: absolute;
+}
+.footer .footerPaw .paw {
+  top: 0;
+  font-size: 400px;
+}
+.footer .footerPaw .socialNet {
+  font-size: 70px;
+  color: black;
+}
+.footer .footerPaw .inst {
+  top: 35%;
+  left: 5%;
+}
+.footer .footerPaw .tel {
+  top: 15%;
+  left: 51%;
+}
+.footer .footerPaw .face {
+  top: 15%;
+  left: 24%;
+}
+.footer .footerPaw .whats {
+  top: 35%;
+  left: 71%;
+}
+.footer .footerPaw .madeBy {
+  top: 75%;
+  left: 32%;
+  text-align: center;
+  color: black;
+}
+/*# sourceMappingURL=globalStyle.css.map */
